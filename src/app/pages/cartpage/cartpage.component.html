@@ -18,6 +18,8 @@
 
   <div *ngIf="cartItems.length > 0" class="total">
     <h2>Total: ${{ totalPrice | number:'1.2-2'}} </h2>
-    <button (click)="clearCart()">Clear Cart</button>
+    <div class="buttons">
+      <button (click)="clearCart()">Buy Now</button>
+    </div>
   </div>
 </div>
