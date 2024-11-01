@@ -1,0 +1,21 @@
+<div class="container">
+  <div *ngIf="isLoading" class="loadingpage">
+    Loading....
+  </div>
+  <div *ngIf="!isLoading" class="product-grid">
+    <div *ngFor="let product of products" class="product-card " loading="lazy">
+      <div class="cardwrapper">
+        <img [src]="product.image" alt="{{ product.title }}" class="product-image" />
+        <h2 class="product-title">{{ product.title | slice:0:30 }}</h2>
+        <p class="product-price">{{ product.price | currency }}</p>
+        <p class="product-description">{{ product.description | slice:0:30 }}...</p>
+      <button *ngIf="!cartService.isInCart(product.id)" (click)="toggleCart(product)" class="add-button">
+         Add to Cart
+      </button>
+      <button *ngIf="cartService.isInCart(product.id)" (click)="toggleCart(product)" class="remove-button">
+        Remove from Cart
+      </button>
+      </div>
+    </div>
+  </div>
+</div>

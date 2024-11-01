@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color : #fff;
+  position: relative;
+  transition: all 0.2s ease;
+
+}
+.cardcontainer {
+  background : #FFCE32;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 60px;
+  margin-left: 60px;;
+
+}
+.bodycontainer {
+  display: flex;
+
+}
+.headercontainer {
+  width: 100%;
+  height: 60px;
+  background-color: #1D63FF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navcontainer {
+  background-color: #1D63FF;
+  margin-top: 60px;
+  color: black;
+  width: 60px;
+  height: 100%;
+  position: fixed;
+}
+
+
+
+

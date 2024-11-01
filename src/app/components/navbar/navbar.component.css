@@ -1,0 +1,45 @@
+.nav-link {
+ padding:10px;
+
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+
+.material-icons-outlined {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.cartcontainer {
+  position: relative;
+  padding-top: 3px;
+}
+
+.productcounticon {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  background-color: red;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 2px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+

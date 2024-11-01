@@ -1,0 +1,21 @@
+.container {
+flex: 1;
+font-weight: bold;
+font-size: 22px;
+padding: 14px 60px;
+display: flex;
+justify-content:center;
+align-items: center;
+z-index: 100000;
+
+@media only screen and (max-width: 600px) {
+   padding: 10px 12px;
+}
+
+.logo {
+  border-radius: 5px;
+  padding: 0px 20px;
+  background-color: rgb(151, 201, 245);
+  cursor: pointer;
+}
+}

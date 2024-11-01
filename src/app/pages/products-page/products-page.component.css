@@ -1,0 +1,92 @@
+/* product-list.component.css */
+
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index:0;
+}
+
+.loadingpage {
+  height: 100vh;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10%;
+}
+.product-card {
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f4c5;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.product-card:hover {
+  transform: translateY(5px);
+}
+
+.product-image {
+  width: 160px;
+  height: 200px;
+
+}
+
+.product-title {
+  color: #000;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.product-price {
+  color: #190096;
+  margin: 0 10px;
+}
+
+.product-description {
+  color: #757575;
+  font-size: 0.9rem;
+  margin: 0 10px 20px;
+}
+
+.add-button {
+  background-color: #ef5f26;
+  border: none;
+  color: rgb(243, 231, 231);
+  padding: 10px;
+  width: 80%;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #ae3002;
+}
+
+.remove-button {
+  background-color: rgba(185, 9, 9, 0.935);
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.remove-button:hover {
+  background-color: #ae3002;
+}

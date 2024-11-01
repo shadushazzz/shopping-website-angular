@@ -1,0 +1,15 @@
+<div class="navbar">
+  <nav class="nav-link">
+    <div>
+      <button (click)="addToCart()" class="homeicon">
+        <span class="material-icons-outlined">home</span> <!-- Outlined Home Icon -->
+      </button>
+    </div>
+    <div class="cartcontainer">
+      <button (click)="goToCart()" class="carticon" [class.disabled]="disableCart">
+        <div class="material-icons-outlined">shopping_cart</div>
+        <div *ngIf="cartCount>0" class="productcounticon">{{cartCount}}</div>
+      </button>
+    </div>
+  </nav>
+</div>
